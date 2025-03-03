@@ -16,5 +16,16 @@
             }
         }
     },
-    "postCreateCommand": "export NG_CLI_ANALYTICS=ci && npm i -g @angular/cli && npm install"
+    "postCreateCommand": "export NG_CLI_ANALYTICS=ci && npm install",
+    "forwardPorts": [3000],
+    "onPortsAttributes": {
+        "3000": {
+            "label": "OWASP Juice Shop",
+            "onOpen": "openPreview"
+        }
+    },
+    "runArgs": [
+      "--name", "workspace"
+    ],
+    "remoteUser": "gitpod"
 }
