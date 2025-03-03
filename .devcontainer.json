@@ -1,14 +1,20 @@
 {
-    "extensions": [
-        "eg2.vscode-npm-script",
-        "angular.ng-template",
-        "dbaeumer.vscode-eslint",
-        "stylelint.vscode-stylelint"
-    ],
-    "settings": {
-        "eslint.workingDirectories": [
-            { "mode": "auto" }
-        ]
+    "image": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "snyk-security.snyk-vulnerability-scanner",
+                "eg2.vscode-npm-script",
+                "angular.ng-template",
+                "dbaeumer.vscode-eslint",
+                "stylelint.vscode-stylelint"
+            ],
+            "settings": {
+                "eslint.workingDirectories": [
+                    { "mode": "auto" }
+                ]
+            }
+        }
     },
     "postCreateCommand": "export NG_CLI_ANALYTICS=ci && npm i -g @angular/cli && npm install"
 }
