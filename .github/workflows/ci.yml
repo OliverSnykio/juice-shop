@@ -17,6 +17,7 @@ on:
       - 'LICENSE'
       - 'data/static/i18n/*.json'
       - 'frontend/src/assets/i18n/*.json'
+    workflow_dispatc:
 env:
   ANGULAR_CLI_VERSION: 15
   CYCLONEDX_NPM_VERSION: '^1.12.0'
